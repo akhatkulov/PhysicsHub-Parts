@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natija</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="result">
+        <h1>Test natijasi</h1>
+        <p>Siz {{ score }} ta to'g'ri javob berdingiz!</p>
+        <p>Jami savollar: {{ total }}</p>
+        <a href="{{ url_for('index') }}">Boshqa testni yechish</a>
+    </div>
+</body>
+
+</html>

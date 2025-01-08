@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testni yeching</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <form action="{{ url_for('submit') }}" method="post" class="quiz-form">
+        <h1 class="quiz-title">Testni yeching</h1>
+
+        <div id="questions-container">
+            {% for question in questions %}
+            <div class="quiz-question" id="question-{{ question.id }}"
+                style="display: {% if loop.index != 1 %} none {% endif %};">
+                <p class="question-text"><strong>{{ question.question }}</strong></p>
+                {% for option in question.options %}
+                <label class="quiz-option">
+                    <input type="radio" name="question-{{ question.id }}" value="{{ option }}" required>
+                    {{ option }}
+                </label><br>
+                {% endfor %}
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="navigation-buttons">
+            <button type="button" id="prev-btn" onclick="navigate(-1)">Orqaga</button>
+            <button type="button" id="next-btn" onclick="navigate(1)">Keyingi</button>
+        </div>
+
+        <button type="submit" class="submit-btn">Yuborish</button>
+    </form>
+
+    <script>
+        let currentQuestionIndex = 0;
+        const questions = document.querySelectorAll('.quiz-question');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+
+        function navigate(direction) {
+            // Oldingi savolni yashirish
+            questions[currentQuestionIndex].style.display = 'none';
+
+            // Yangi savolni ko'rsatish
+            currentQuestionIndex += direction;
+            questions[currentQuestionIndex].style.display = 'block';
+
+            // Tugmalarni yoqish yoki o'chirish
+            if (currentQuestionIndex === 0) {
+                prevBtn.disabled = true;
+            } else if (currentQuestionIndex === questions.length - 1) {
+                nextBtn.disabled = true;
+            } else {
+                prevBtn.disabled = false;
+                nextBtn.disabled = false;
+            }
+        }
+
+        // Dastlabki tugma holatini tekshirish
+        if (currentQuestionIndex === 0) {
+            prevBtn.disabled = true;
+        }
+    </script>
+</body>
+
+</html>

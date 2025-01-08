@@ -1,0 +1,222 @@
+[
+    {
+        "id": 1,
+        "question": "Python dasturlash tilida eng asosiy o'zgaruvchi turi qaysi?",
+        "options": [
+            "String",
+            "Integer",
+            "List",
+            "Boolean"
+        ],
+        "answer": "Integer"
+    },
+    {
+        "id": 2,
+        "question": "HTML nima uchun ishlatiladi?",
+        "options": [
+            "Web sahifalarni yaratish",
+            "Dasturlarni yozish",
+            "Ma'lumotlarni saqlash",
+            "Chizma yaratish"
+        ],
+        "answer": "Web sahifalarni yaratish"
+    },
+    {
+        "id": 3,
+        "question": "JavaScript qaysi turdagi dasturlash tilidir?",
+        "options": [
+            "Statik",
+            "Dinamik",
+            "Kompyuterga yaqin",
+            "Markup"
+        ],
+        "answer": "Dinamik"
+    },
+    {
+        "id": 4,
+        "question": "CSS nima qiladi?",
+        "options": [
+            "Web sahifalarini formatlash",
+            "Matnlarni saqlash",
+            "Dasturlarni yaratish",
+            "Internetga ulanish"
+        ],
+        "answer": "Web sahifalarini formatlash"
+    },
+    {
+        "id": 5,
+        "question": "O'zgaruvchilar qanday qilib e'lon qilinadi?",
+        "options": [
+            "var",
+            "let",
+            "const",
+            "All of the above"
+        ],
+        "answer": "All of the above"
+    },
+    {
+        "id": 6,
+        "question": "Pythonning eng mashhur kutubxonalaridan biri qaysi?",
+        "options": [
+            "numpy",
+            "os",
+            "sys",
+            "all of the above"
+        ],
+        "answer": "all of the above"
+    },
+    {
+        "id": 7,
+        "question": "HTML5 elementlaridan biri qaysi?",
+        "options": [
+            "<canvas>",
+            "<div>",
+            "<span>",
+            "<img>"
+        ],
+        "answer": "<canvas>"
+    },
+    {
+        "id": 8,
+        "question": "SQLning to'liq nomi nima?",
+        "options": [
+            "Structured Query Language",
+            "Simple Query Language",
+            "System Query Language",
+            "Structured Quick Language"
+        ],
+        "answer": "Structured Query Language"
+    },
+    {
+        "id": 9,
+        "question": "Git nima uchun ishlatiladi?",
+        "options": [
+            "Dastur versiyalarini boshqarish",
+            "Internetni tezlashtirish",
+            "Sahifalarni yaratish",
+            "Fayllarni tahrirlash"
+        ],
+        "answer": "Dastur versiyalarini boshqarish"
+    },
+    {
+        "id": 10,
+        "question": "CSSdagi 'class' atributi nimani anglatadi?",
+        "options": [
+            "Elementlarga uslub berish",
+            "Web sahifalarni yaratish",
+            "Javoblar yozish",
+            "Dasturlar yaratish"
+        ],
+        "answer": "Elementlarga uslub berish"
+    },
+    {
+        "id": 11,
+        "question": "Web sahifa uchun fayllarni yaratishda qaysi elementni ishlatish kerak?",
+        "options": [
+            "<html>",
+            "<header>",
+            "<footer>",
+            "<script>"
+        ],
+        "answer": "<html>"
+    },
+    {
+        "id": 12,
+        "question": "JavaScriptda to'g'ri va noto'g'ri qiymatlar qanday ifodalanadi?",
+        "options": [
+            "true/false",
+            "on/off",
+            "yes/no",
+            "1/0"
+        ],
+        "answer": "true/false"
+    },
+    {
+        "id": 13,
+        "question": "Pythonda ro'yxatni qanday e'lon qilish mumkin?",
+        "options": [
+            "[]",
+            "{}",
+            "()",
+            "<>"
+        ],
+        "answer": "[]"
+    },
+    {
+        "id": 14,
+        "question": "CSS qanday qilib sahifadagi barcha matnlarni qizil rangda ko'rsatadi?",
+        "options": [
+            "color: red;",
+            "background-color: red;",
+            "font-color: red;",
+            "text-color: red;"
+        ],
+        "answer": "color: red;"
+    },
+    {
+        "id": 15,
+        "question": "Pythonda funksiya qanday e'lon qilinadi?",
+        "options": [
+            "def function_name():",
+            "function function_name():",
+            "funct function_name():",
+            "create function_name():"
+        ],
+        "answer": "def function_name():"
+    },
+    {
+        "id": 16,
+        "question": "HTMLda matnni qalin qilish uchun qanday teg ishlatiladi?",
+        "options": [
+            "<strong>",
+            "<bold>",
+            "<b>",
+            "<em>"
+        ],
+        "answer": "<strong>"
+    },
+    {
+        "id": 17,
+        "question": "JavaScriptda ob'ektni qanday yaratish mumkin?",
+        "options": [
+            "let obj = {}",
+            "let obj = []",
+            "let obj = ()",
+            "let obj = <>"
+        ],
+        "answer": "let obj = {}"
+    },
+    {
+        "id": 18,
+        "question": "CSSda elementni markazga joylashtirish uchun qanday texnika ishlatiladi?",
+        "options": [
+            "flexbox",
+            "grid",
+            "float",
+            "margin"
+        ],
+        "answer": "flexbox"
+    },
+    {
+        "id": 19,
+        "question": "Web sahifalarda interaktivlikni qo'shish uchun qaysi til ishlatiladi?",
+        "options": [
+            "JavaScript",
+            "CSS",
+            "HTML",
+            "Python"
+        ],
+        "answer": "JavaScript"
+    },
+    {
+        "id": 20,
+        "question": "Pythonning asosiy maqsadi nima?",
+        "options": [
+            "Dasturlash",
+            "Web dasturlash",
+            "Ma'lumotlarni tahlil qilish",
+            "Hammasi"
+        ],
+        "answer": "Hammasi"
+    }
+]
