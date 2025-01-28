@@ -9,7 +9,19 @@
 </head>
 
 <body>
+    <!-- Navbar -->
     <form action="{{ url_for('submit') }}" method="post" class="quiz-form">
+        <nav class="navbar">
+            <ul id="navbar-questions">
+                {% for question in questions %}
+                    <li class="navbar-item" id="navbar-item-{{ question.id }}" 
+                        style="background-color: hsl({{ loop.index * 30 }}, 100%, 60%);">
+                        <a href="javascript:void(0);" onclick="navigateToQuestion({{ loop.index0 }})">{{ loop.index }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+        
         <h1 class="quiz-title">Testni yeching</h1>
 
         <div id="questions-container">
@@ -40,6 +52,7 @@
         const questions = document.querySelectorAll('.quiz-question');
         const prevBtn = document.getElementById('prev-btn');
         const nextBtn = document.getElementById('next-btn');
+        const navbarItems = document.querySelectorAll('.navbar-item');
 
         function navigate(direction) {
             // Oldingi savolni yashirish
@@ -48,6 +61,9 @@
             // Yangi savolni ko'rsatish
             currentQuestionIndex += direction;
             questions[currentQuestionIndex].style.display = 'block';
+
+            // Navbar indikatorlarini yangilash
+            updateNavbarIndicators();
 
             // Tugmalarni yoqish yoki o'chirish
             if (currentQuestionIndex === 0) {
@@ -60,10 +76,47 @@
             }
         }
 
+        function navigateToQuestion(index) {
+            // Oldingi savolni yashirish
+            questions[currentQuestionIndex].style.display = 'none';
+            
+            // Yangi savolni ko'rsatish
+            currentQuestionIndex = index;
+            questions[currentQuestionIndex].style.display = 'block';
+
+            // Navbar indikatorlarini yangilash
+            updateNavbarIndicators();
+        }
+
+        function updateNavbarIndicators() {
+            // Har bir savol uchun indikatorni yangilash
+            navbarItems.forEach((item, index) => {
+                const radioButtons = questions[index].querySelectorAll('input[type="radio"]');
+                let isAnswered = false;
+
+                // Agar savolga javob berilgan bo'lsa
+                radioButtons.forEach(radio => {
+                    if (radio.checked) {
+                        isAnswered = true;
+                    }
+                });
+
+                // Navbarda fon rangini yangilash
+                if (isAnswered) {
+                    item.style.backgroundColor = 'green';  // Javob berilgan
+                } else {
+                    item.style.backgroundColor = 'red';  // Javob berilmagan
+                }
+            });
+        }
+
         // Dastlabki tugma holatini tekshirish
         if (currentQuestionIndex === 0) {
             prevBtn.disabled = true;
         }
+
+        // Navbar indikatorlarini boshlang'ich holatga keltirish
+        updateNavbarIndicators();
     </script>
 </body>
 

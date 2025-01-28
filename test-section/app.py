@@ -16,14 +16,30 @@ def index():
 
 @app.route('/submit', methods=['POST'])
 def submit():
-    answers = {f'question-{q["id"]}': request.form.get(f'question-{q["id"]}')
-               for q in load_questions()}
-    print(answers)
-    correct_answers = {f'question-{q["id"]}': q['answer'] for q in load_questions()}
-
-    score = sum(1 for qid, answer in answers.items() if answer == correct_answers.get(qid))
+    # Savollarni yuklash
+    questions = load_questions()
+    # Savollarni `id` bo'yicha tartiblangan lug'atga o'girish
+    questions_dict = {f'question-{q["id"]}': q for q in questions}
     
-    return render_template('result.html', score=score, total=len(correct_answers))
+    # Foydalanuvchi javoblarini olish
+    answers = {f'question-{q["id"]}': request.form.get(f'question-{q["id"]}')
+               for q in questions}
+    print(answers)
+    
+    # To'g'ri javoblarni yuklash
+    correct_answers = {f'question-{q["id"]}': q['answer'] for q in questions}
+    print("--[]--", correct_answers)
+    
+    score = users_ball = 0  
+    for qid, answer in answers.items(): 
+        correct_answer = correct_answers.get(qid)  
+        if answer == correct_answer:  
+            score += 1  
+            users_ball += questions_dict[qid]['ball']  
+    
+    print(users_ball)    
+    return render_template('result.html',ball=users_ball, score=score, total=len(correct_answers))
+
 
 if __name__ == '__main__':
     app.run(debug=True)

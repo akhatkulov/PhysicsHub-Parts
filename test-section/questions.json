@@ -8,7 +8,8 @@
             "List",
             "Boolean"
         ],
-        "answer": "Integer"
+        "answer": "Integer",
+        "ball":1
     },
     {
         "id": 2,
@@ -19,7 +20,8 @@
             "Ma'lumotlarni saqlash",
             "Chizma yaratish"
         ],
-        "answer": "Web sahifalarni yaratish"
+        "answer": "Web sahifalarni yaratish",
+        "ball":1
     },
     {
         "id": 3,
@@ -30,7 +32,8 @@
             "Kompyuterga yaqin",
             "Markup"
         ],
-        "answer": "Dinamik"
+        "answer": "Dinamik",
+        "ball":1
     },
     {
         "id": 4,
@@ -41,7 +44,8 @@
             "Dasturlarni yaratish",
             "Internetga ulanish"
         ],
-        "answer": "Web sahifalarini formatlash"
+        "answer": "Web sahifalarini formatlash",
+        "ball":1
     },
     {
         "id": 5,
@@ -52,7 +56,8 @@
             "const",
             "All of the above"
         ],
-        "answer": "All of the above"
+        "answer": "All of the above",
+        "ball":1
     },
     {
         "id": 6,
@@ -63,7 +68,8 @@
             "sys",
             "all of the above"
         ],
-        "answer": "all of the above"
+        "answer": "all of the above",
+        "ball":1
     },
     {
         "id": 7,
@@ -74,7 +80,8 @@
             "<span>",
             "<img>"
         ],
-        "answer": "<canvas>"
+        "answer": "<canvas>",
+        "ball":1
     },
     {
         "id": 8,
@@ -85,7 +92,8 @@
             "System Query Language",
             "Structured Quick Language"
         ],
-        "answer": "Structured Query Language"
+        "answer": "Structured Query Language",
+        "ball":1
     },
     {
         "id": 9,
@@ -96,7 +104,8 @@
             "Sahifalarni yaratish",
             "Fayllarni tahrirlash"
         ],
-        "answer": "Dastur versiyalarini boshqarish"
+        "answer": "Dastur versiyalarini boshqarish",
+        "ball":1
     },
     {
         "id": 10,
@@ -107,7 +116,8 @@
             "Javoblar yozish",
             "Dasturlar yaratish"
         ],
-        "answer": "Elementlarga uslub berish"
+        "answer": "Elementlarga uslub berish",
+        "ball":1
     },
     {
         "id": 11,
@@ -118,7 +128,8 @@
             "<footer>",
             "<script>"
         ],
-        "answer": "<html>"
+        "answer": "<html>",
+        "ball":1
     },
     {
         "id": 12,
@@ -140,7 +151,8 @@
             "()",
             "<>"
         ],
-        "answer": "[]"
+        "answer": "[]",
+        "ball":1
     },
     {
         "id": 14,
@@ -151,7 +163,8 @@
             "font-color: red;",
             "text-color: red;"
         ],
-        "answer": "color: red;"
+        "answer": "color: red;",
+        "ball":1
     },
     {
         "id": 15,
@@ -162,7 +175,8 @@
             "funct function_name():",
             "create function_name():"
         ],
-        "answer": "def function_name():"
+        "answer": "def function_name():",
+        "ball":1
     },
     {
         "id": 16,
@@ -173,7 +187,8 @@
             "<b>",
             "<em>"
         ],
-        "answer": "<strong>"
+        "answer": "<strong>",
+        "ball":1
     },
     {
         "id": 17,
@@ -184,7 +199,8 @@
             "let obj = ()",
             "let obj = <>"
         ],
-        "answer": "let obj = {}"
+        "answer": "let obj = {}",
+        "ball":1
     },
     {
         "id": 18,
@@ -195,7 +211,8 @@
             "float",
             "margin"
         ],
-        "answer": "flexbox"
+        "answer": "flexbox",
+        "ball":1
     },
     {
         "id": 19,
@@ -206,7 +223,8 @@
             "HTML",
             "Python"
         ],
-        "answer": "JavaScript"
+        "answer": "JavaScript",
+        "ball":1
     },
     {
         "id": 20,
@@ -217,6 +235,7 @@
             "Ma'lumotlarni tahlil qilish",
             "Hammasi"
         ],
-        "answer": "Hammasi"
+        "answer": "Hammasi",
+        "ball":1
     }
 ]
