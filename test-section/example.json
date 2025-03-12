@@ -1,0 +1,26 @@
+{
+    "title": "informatika",
+    "theme": "asoslar",
+    "status": true,
+    "data": [
+        {
+            "id": 1,
+            "question": "Python dasturlash tilida eng asosiy o'zgaruvchi turi qaysi?",
+            "options": ["String", "Integer", "List", "Boolean"],
+            "answer": "Integer",
+            "ball": 1
+        },
+        {
+            "id": 2,
+            "question": "HTML nima uchun ishlatiladi?",
+            "options": [
+                "Web sahifalarni yaratish",
+                "Dasturlarni yozish",
+                "Ma'lumotlarni saqlash",
+                "Chizma yaratish"
+            ],
+            "answer": "Web sahifalarni yaratish",
+            "ball": 1
+        }
+    ]
+}

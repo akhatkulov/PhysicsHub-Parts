@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT 4o Mini</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="chat-part-container">
+        <div class="chat-part-header">ChatGPT 4o Mini</div>
+        <div id="chat-part-box"></div>
+        <div class="chat-part-input-area">
+            <input type="text" id="chat-part-user-input" placeholder="Xabar yozing...">
+            <button id="chat-part-send-btn">➤</button>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizika Masalalari</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Fizika Masalalari</h1>
+        <p>Yecha oladigan masalangizni tanlang:</p>
+        <div class="problems">
+            {% for problem in problems %}
+            <div class="problem-card">
+                <h2>{{ problem.title }}</h2>
+                <a href="{{ url_for('solve', problem_id=problem.id) }}">Masalani yechish →</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

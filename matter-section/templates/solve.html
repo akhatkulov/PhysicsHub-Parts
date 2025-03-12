@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masala Yechish</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>{{ problem.title }}</h1>
+        <p class="question">{{ problem.main }}</p>
+        <p class="helper"><strong>Yordam:</strong> {{ problem.helper }}</p>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <div class="flash-messages">
+                    {% for category, message in messages %}
+                        <div class="flash {{ category }}">{{ message }}</div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        <form method="POST">
+            <input type="text" name="answer" placeholder="Javobni kiriting" required>
+            <button type="submit">Yuborish</button>
+        </form>
+        <br>
+        <a href="{{ url_for('home') }}">⬅ Masalalar ro‘yxatiga qaytish</a>
+    </div>
+</body>
+</html>
